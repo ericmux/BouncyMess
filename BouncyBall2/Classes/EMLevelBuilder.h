@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "cocos2d.h"
 
 @interface EMLevelBuilder : NSObject
+
++(NSMutableArray *)buildDummyLevel:(CGSize)screenSize;
 
 @end

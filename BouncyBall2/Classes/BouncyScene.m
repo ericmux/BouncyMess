@@ -4,6 +4,7 @@
 #import "Bunny.h"
 #import "Platform.h"
 #import "EMSpriteHelper.h"
+#import "EMLevelBuilder.h"
 
 
 @implementation BouncyScene
@@ -45,28 +46,11 @@
     _physics.collisionDelegate = (NSObject<CCPhysicsCollisionDelegate> *) self;
     [self addChild:_physics];
     
-    CGFloat _offset = 0.1*_screenSize.width;
-        
-    Platform *p = [Platform platformWithRectangle:CGRectMake(centerPos.x - _offset, centerPos.y - _offset, 0.25*_screenSize.width, 0.05*_screenSize.height)];
-    [_physics addChild:p];
+    NSMutableArray *level  = [EMLevelBuilder buildDummyLevel:_screenSize];
     
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x + _offset, centerPos.y, 0.15*_screenSize.width, 0.05*_screenSize.height)];
-    [_physics addChild:p];
-    
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - _offset, centerPos.y, 0.05*_screenSize.width, 0.05*_screenSize.height)];
-    [_physics addChild:p];
-    
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 4*_offset, centerPos.y + 2*_offset, 0.5*_screenSize.width, 0.05*_screenSize.height)];
-    [_physics addChild:p];
-    
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x + 2*_offset, centerPos.y, 0.05*_screenSize.width, 0.25*_screenSize.height)];
-    [_physics addChild:p];
-    
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 2*_offset, centerPos.y - 2*_offset, 0.25*_screenSize.width, 0.05*_screenSize.height)];
-    [_physics addChild:p];
-    
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 3*_offset, centerPos.y - 3*_offset, 0.25*_screenSize.width, 0.05*_screenSize.height)];
-    [_physics addChild:p];
+    for(Platform *p in level){
+        [_physics addChild:p];
+    }
     
     
 	CGRect worldRect = CGRectMake(0, 0, [CCDirector sharedDirector].viewSize.width, [CCDirector sharedDirector].viewSize.height);
