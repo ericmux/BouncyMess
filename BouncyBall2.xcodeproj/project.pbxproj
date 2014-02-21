@@ -219,10 +219,10 @@
 		60C62D5718B77B0000356B19 /* newton-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C62D5618B77B0000356B19 /* newton-ipad.png */; };
 		60C62D5918B77B0000356B19 /* newton.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C62D5818B77B0000356B19 /* newton.plist */; };
 		60C62D5B18B77B0000356B19 /* newton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C62D5A18B77B0000356B19 /* newton.png */; };
-		60C62D6D18B77B8800356B19 /* BouncyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D6518B77B8800356B19 /* BouncyScene.m */; };
-		60C62D6E18B77B8800356B19 /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D6918B77B8800356B19 /* Platform.m */; };
-		60C62D6F18B77B8800356B19 /* EMSpriteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D6A18B77B8800356B19 /* EMSpriteHelper.m */; };
-		60C62D7018B77B8800356B19 /* Bunny.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D6C18B77B8800356B19 /* Bunny.m */; };
+		60C62D8918B7EEF200356B19 /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8118B7EEF200356B19 /* Platform.m */; };
+		60C62D8A18B7EEF200356B19 /* EMSpriteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8218B7EEF200356B19 /* EMSpriteHelper.m */; };
+		60C62D8B18B7EEF200356B19 /* BouncyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8518B7EEF200356B19 /* BouncyScene.m */; };
+		60C62D8C18B7EEF200356B19 /* Bunny.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8718B7EEF200356B19 /* Bunny.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -670,15 +670,15 @@
 		60C62D5618B77B0000356B19 /* newton-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "newton-ipad.png"; path = "Resources/newton-ipad.png"; sourceTree = "<group>"; };
 		60C62D5818B77B0000356B19 /* newton.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = newton.plist; path = Resources/newton.plist; sourceTree = "<group>"; };
 		60C62D5A18B77B0000356B19 /* newton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newton.png; path = Resources/newton.png; sourceTree = "<group>"; };
-		60C62D6418B77B8800356B19 /* Bunny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bunny.h; path = ../../../../../Desktop/Classes/Bunny.h; sourceTree = "<group>"; };
-		60C62D6518B77B8800356B19 /* BouncyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BouncyScene.m; path = ../../../../../Desktop/Classes/BouncyScene.m; sourceTree = "<group>"; };
-		60C62D6618B77B8800356B19 /* BouncyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BouncyScene.h; path = ../../../../../Desktop/Classes/BouncyScene.h; sourceTree = "<group>"; };
-		60C62D6718B77B8800356B19 /* EMSpriteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMSpriteHelper.h; path = ../../../../../Desktop/Classes/EMSpriteHelper.h; sourceTree = "<group>"; };
-		60C62D6818B77B8800356B19 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = ../../../../../Desktop/Classes/Platform.h; sourceTree = "<group>"; };
-		60C62D6918B77B8800356B19 /* Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Platform.m; path = ../../../../../Desktop/Classes/Platform.m; sourceTree = "<group>"; };
-		60C62D6A18B77B8800356B19 /* EMSpriteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMSpriteHelper.m; path = ../../../../../Desktop/Classes/EMSpriteHelper.m; sourceTree = "<group>"; };
-		60C62D6B18B77B8800356B19 /* BouncyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BouncyConstants.h; path = ../../../../../Desktop/Classes/BouncyConstants.h; sourceTree = "<group>"; };
-		60C62D6C18B77B8800356B19 /* Bunny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bunny.m; path = ../../../../../Desktop/Classes/Bunny.m; sourceTree = "<group>"; };
+		60C62D8018B7EEF200356B19 /* Bunny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bunny.h; path = Classes/Bunny.h; sourceTree = "<group>"; };
+		60C62D8118B7EEF200356B19 /* Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Platform.m; path = Classes/Platform.m; sourceTree = "<group>"; };
+		60C62D8218B7EEF200356B19 /* EMSpriteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMSpriteHelper.m; path = Classes/EMSpriteHelper.m; sourceTree = "<group>"; };
+		60C62D8318B7EEF200356B19 /* EMSpriteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMSpriteHelper.h; path = Classes/EMSpriteHelper.h; sourceTree = "<group>"; };
+		60C62D8418B7EEF200356B19 /* BouncyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BouncyScene.h; path = Classes/BouncyScene.h; sourceTree = "<group>"; };
+		60C62D8518B7EEF200356B19 /* BouncyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BouncyScene.m; path = Classes/BouncyScene.m; sourceTree = "<group>"; };
+		60C62D8618B7EEF200356B19 /* BouncyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BouncyConstants.h; path = Classes/BouncyConstants.h; sourceTree = "<group>"; };
+		60C62D8718B7EEF200356B19 /* Bunny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bunny.m; path = Classes/Bunny.m; sourceTree = "<group>"; };
+		60C62D8818B7EEF200356B19 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = Classes/Platform.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1574,29 +1574,21 @@
 		60C62D3518B77B0000356B19 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				60C62D7118B77C1900356B19 /* SpriteHelpers */,
-				60C62D6418B77B8800356B19 /* Bunny.h */,
-				60C62D6C18B77B8800356B19 /* Bunny.m */,
-				60C62D6B18B77B8800356B19 /* BouncyConstants.h */,
-				60C62D6518B77B8800356B19 /* BouncyScene.m */,
-				60C62D6618B77B8800356B19 /* BouncyScene.h */,
-				60C62D6818B77B8800356B19 /* Platform.h */,
-				60C62D6918B77B8800356B19 /* Platform.m */,
+				60C62D8018B7EEF200356B19 /* Bunny.h */,
+				60C62D8118B7EEF200356B19 /* Platform.m */,
+				60C62D8218B7EEF200356B19 /* EMSpriteHelper.m */,
+				60C62D8318B7EEF200356B19 /* EMSpriteHelper.h */,
+				60C62D8418B7EEF200356B19 /* BouncyScene.h */,
+				60C62D8518B7EEF200356B19 /* BouncyScene.m */,
+				60C62D8618B7EEF200356B19 /* BouncyConstants.h */,
+				60C62D8718B7EEF200356B19 /* Bunny.m */,
+				60C62D8818B7EEF200356B19 /* Platform.h */,
 				60C62D3618B77B0000356B19 /* AppDelegate.h */,
 				60C62D3718B77B0000356B19 /* AppDelegate.m */,
 				60C62D4318B77B0000356B19 /* NewtonSphere.h */,
 				60C62D4418B77B0000356B19 /* NewtonSphere.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		60C62D7118B77C1900356B19 /* SpriteHelpers */ = {
-			isa = PBXGroup;
-			children = (
-				60C62D6718B77B8800356B19 /* EMSpriteHelper.h */,
-				60C62D6A18B77B8800356B19 /* EMSpriteHelper.m */,
-			);
-			name = SpriteHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1719,7 +1711,6 @@
 				60C62AF518B77AFE00356B19 /* CCAtlasNode.m in Sources */,
 				60C62C4318B77AFF00356B19 /* OpenALManager.m in Sources */,
 				60C62C4F18B77AFF00356B19 /* IOSVersion.m in Sources */,
-				60C62D6E18B77B8800356B19 /* Platform.m in Sources */,
 				60C62B0418B77AFE00356B19 /* CCDirector.m in Sources */,
 				60C62C6F18B77AFF00356B19 /* CCScrollView.m in Sources */,
 				60C62B6218B77AFE00356B19 /* CCResponder.m in Sources */,
@@ -1729,12 +1720,13 @@
 				60C62B8F18B77AFE00356B19 /* CCSpriteFrame.m in Sources */,
 				60C62B2318B77AFE00356B19 /* CCNodeColor.m in Sources */,
 				60C62BFC18B77AFF00356B19 /* TransformUtils.m in Sources */,
-				60C62D7018B77B8800356B19 /* Bunny.m in Sources */,
 				60C62B9D18B77AFE00356B19 /* CCTextureCache.m in Sources */,
 				60C62BC818B77AFF00356B19 /* CCAppDelegate.m in Sources */,
+				60C62D8C18B7EEF200356B19 /* Bunny.m in Sources */,
 				60C62BCC18B77AFF00356B19 /* CCDirectorMac.m in Sources */,
 				60C62B0018B77AFE00356B19 /* ccDeprecated.m in Sources */,
 				60C62C2F18B77AFF00356B19 /* ALContext.m in Sources */,
+				60C62D8A18B7EEF200356B19 /* EMSpriteHelper.m in Sources */,
 				60C62B0B18B77AFE00356B19 /* CCDrawNode.m in Sources */,
 				60C62BDC18B77AFF00356B19 /* CCFileUtils.m in Sources */,
 				60C62C5F18B77AFF00356B19 /* OALTools.m in Sources */,
@@ -1744,6 +1736,7 @@
 				60C62B4018B77AFE00356B19 /* CCParticleExamples.m in Sources */,
 				60C62C7218B77AFF00356B19 /* CCSlider.m in Sources */,
 				60C62BAD18B77AFE00356B19 /* CCTMXXMLParser.m in Sources */,
+				60C62D8B18B7EEF200356B19 /* BouncyScene.m in Sources */,
 				60C62BED18B77AFF00356B19 /* CGPointExtension.m in Sources */,
 				60C62C7818B77AFF00356B19 /* CCTextField.m in Sources */,
 				60C62BE318B77AFF00356B19 /* CCProfiling.m in Sources */,
@@ -1779,7 +1772,6 @@
 				60C62BD218B77AFF00356B19 /* CCWindow.m in Sources */,
 				60C62AE718B77AFE00356B19 /* CCActionProgressTimer.m in Sources */,
 				60C62C9D18B77AFF00356B19 /* plane.c in Sources */,
-				60C62D6F18B77B8800356B19 /* EMSpriteHelper.m in Sources */,
 				60C62C2018B77AFF00356B19 /* OALSimpleAudio.m in Sources */,
 				60C62B1218B77AFE00356B19 /* CCGLProgram.m in Sources */,
 				60C62D3418B77B0000356B19 /* main.m in Sources */,
@@ -1788,6 +1780,7 @@
 				60C62BAA18B77AFE00356B19 /* CCTiledMapObjectGroup.m in Sources */,
 				60C62D4518B77B0000356B19 /* NewtonSphere.m in Sources */,
 				60C62CA718B77AFF00356B19 /* vec3.c in Sources */,
+				60C62D8918B7EEF200356B19 /* Platform.m in Sources */,
 				60C62B2A18B77AFE00356B19 /* CCLayoutBox.m in Sources */,
 				60C62B2718B77AFE00356B19 /* CCLayout.m in Sources */,
 				60C62C4A18B77AFF00356B19 /* OALSuspendHandler.m in Sources */,
@@ -1809,7 +1802,6 @@
 				60C62BA718B77AFE00356B19 /* CCTiledMapLayer.m in Sources */,
 				60C62C9B18B77AFF00356B19 /* neon_matrix_impl.c in Sources */,
 				60C62B2018B77AFE00356B19 /* CCLabelTTF.m in Sources */,
-				60C62D6D18B77B8800356B19 /* BouncyScene.m in Sources */,
 				60C62BD518B77AFF00356B19 /* NSEvent+CC.m in Sources */,
 				60C62C3218B77AFF00356B19 /* ALDevice.m in Sources */,
 				60C62CA518B77AFF00356B19 /* vec2.c in Sources */,

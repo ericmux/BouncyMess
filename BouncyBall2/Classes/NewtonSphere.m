@@ -75,7 +75,7 @@
     self.physicsBody = body;
     
     // Set the physics properties, trying to simulate a newtons cradle
-    body.friction = NewtonSphereFriction;
+    body.friction = 0;
     body.elasticity = NewtonSphereElasticity;
     
     // Assign the collision category
