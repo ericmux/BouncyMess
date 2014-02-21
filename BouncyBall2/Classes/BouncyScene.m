@@ -78,14 +78,6 @@
     outline.physicsBody.collisionType = BouncyThickPlatformCollision;
     [_physics addChild:outline];
     
-    
-    for (int index = 0; index < 2; index ++)
-    {
-        NewtonSphere *sphere = [NewtonSphere newtonSphereWithLetter:(NSString *)NewtonLetter[index]];
-        sphere.position = ccpAdd(centerPos, ccpMult(NewtonLetterPosition[index], sphere.sphere.contentSize.width - NewtonSphereMargin + NewtonSphereSpacing));
-        [_physics addChild:sphere];
-    }
-    
     Bunny *bunny = [[Bunny alloc] init];
     bunny.position = centerPos;
     [_physics addChild:bunny];
@@ -143,7 +135,7 @@
 }
 
 - (BOOL)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sphereCollision:(Bunny *)bunny thickPlatformCollision:(CCNode *)platform {
-    bunny.physicsBody.velocity = _previous_velocity;
+    bunny.physicsBody.velocity = bunny.defaultVelocity;
     return YES;
 }
 

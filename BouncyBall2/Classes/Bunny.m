@@ -40,7 +40,7 @@
     _sphere.color = [CCColor whiteColor];
     
     
-    _defaultVelocity = ccp(2*_sphere.contentSize.width*_sphere.scale, _sphere.contentSize.width*_sphere.scale);
+    _defaultVelocity = ccp(2*_sphere.contentSize.width*_sphere.scale, 15*_sphere.contentSize.width*_sphere.scale);
     
     self.userInteractionEnabled = YES;
     

@@ -223,6 +223,7 @@
 		60C62D8A18B7EEF200356B19 /* EMSpriteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8218B7EEF200356B19 /* EMSpriteHelper.m */; };
 		60C62D8B18B7EEF200356B19 /* BouncyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8518B7EEF200356B19 /* BouncyScene.m */; };
 		60C62D8C18B7EEF200356B19 /* Bunny.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8718B7EEF200356B19 /* Bunny.m */; };
+		60C62D8F18B7F9D000356B19 /* EMLevelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C62D8E18B7F9D000356B19 /* EMLevelBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -679,6 +680,8 @@
 		60C62D8618B7EEF200356B19 /* BouncyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BouncyConstants.h; path = Classes/BouncyConstants.h; sourceTree = "<group>"; };
 		60C62D8718B7EEF200356B19 /* Bunny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bunny.m; path = Classes/Bunny.m; sourceTree = "<group>"; };
 		60C62D8818B7EEF200356B19 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = Classes/Platform.h; sourceTree = "<group>"; };
+		60C62D8D18B7F9D000356B19 /* EMLevelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMLevelBuilder.h; path = Classes/EMLevelBuilder.h; sourceTree = "<group>"; };
+		60C62D8E18B7F9D000356B19 /* EMLevelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMLevelBuilder.m; path = Classes/EMLevelBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1587,6 +1590,8 @@
 				60C62D3718B77B0000356B19 /* AppDelegate.m */,
 				60C62D4318B77B0000356B19 /* NewtonSphere.h */,
 				60C62D4418B77B0000356B19 /* NewtonSphere.m */,
+				60C62D8D18B7F9D000356B19 /* EMLevelBuilder.h */,
+				60C62D8E18B7F9D000356B19 /* EMLevelBuilder.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1799,6 +1804,7 @@
 				60C62C5B18B77AFF00356B19 /* OALAudioFile.m in Sources */,
 				60C62B8118B77AFE00356B19 /* ccShaders.m in Sources */,
 				60C62C9518B77AFF00356B19 /* matrix.c in Sources */,
+				60C62D8F18B7F9D000356B19 /* EMLevelBuilder.m in Sources */,
 				60C62BA718B77AFE00356B19 /* CCTiledMapLayer.m in Sources */,
 				60C62C9B18B77AFF00356B19 /* neon_matrix_impl.c in Sources */,
 				60C62B2018B77AFE00356B19 /* CCLabelTTF.m in Sources */,
