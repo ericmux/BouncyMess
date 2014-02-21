@@ -29,6 +29,7 @@
     _sphere = [CCSprite spriteWithImageNamed:[NSString stringWithFormat:@"letter.o.png"]];
     _sphere.scale = 0.5f;
     [self addChild:_sphere];
+    
 
     CCPhysicsBody *body = [CCPhysicsBody bodyWithCircleOfRadius:(_sphere.contentSize.width) *_sphere.scale*0.5 andCenter:CGPointZero];
     self.physicsBody = body;

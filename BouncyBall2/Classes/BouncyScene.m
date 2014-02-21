@@ -118,8 +118,13 @@
     return YES;
 }
 
-- (BOOL)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sphereCollision:(Bunny *)bunny thickPlatformCollision:(CCNode *)platform {
-    bunny.physicsBody.velocity = bunny.defaultVelocity;
+- (BOOL)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sphereCollision:(Bunny *)bunny thickPlatformCollision:(Platform *)platform {
+    CCLOG(@"b:%f  p:%f", bunny.position.y, platform.position.y);
+    if(bunny.position.y + bunny.contentSize.height*0.5 >= platform.position.y){
+        bunny.physicsBody.velocity = bunny.defaultVelocity;
+    } else {
+        bunny.physicsBody.velocity = _previous_velocity;
+    }
     return YES;
 }
 

@@ -20,8 +20,11 @@
     
     _sprite = [EMSpriteHelper createSpriteRectangleWithSize:rect];
     [self addChild:_sprite];
+    self.position = rect.origin;
     
-    CCPhysicsBody *body = [CCPhysicsBody bodyWithRect:rect cornerRadius:0];
+    CCLOG(@"p:%f", self.position.y);
+    
+    CCPhysicsBody *body = [CCPhysicsBody bodyWithRect:CGRectMake(0, 0, rect.size.width, rect.size.height) cornerRadius:0];
     self.physicsBody = body;
     body.type = CCPhysicsBodyTypeStatic;
     body.collisionGroup = BouncyThickPlatformGroup;

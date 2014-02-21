@@ -14,7 +14,7 @@
     [sprite setTexture:tex];
     [sprite setTextureRect:rect];
     [sprite setAnchorPoint:ccp(0,0)];
-    [sprite setPosition:rect.origin];
+    [sprite setPosition:ccp(0,0)];
     [sprite setColor:[CCColor blackColor]];
     
     free(buffer);

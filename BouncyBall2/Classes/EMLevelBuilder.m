@@ -19,27 +19,30 @@
     
     
     CGPoint centerPos = ccp(screenSize.width*0.5, screenSize.height*0.5);
-    CGFloat _offset = 0.1*screenSize.width;
+    CGPoint _offset = ccp(0.5*0.15*screenSize.width,0.05*screenSize.height);
         
-    Platform *p = [Platform platformWithRectangle:CGRectMake(centerPos.x - _offset, centerPos.y - _offset, 0.25*screenSize.width, 0.05*screenSize.height)];
+    Platform *p = [Platform platformWithRectangle:CGRectMake(centerPos.x - _offset.x, centerPos.y - _offset.y, 0.15*screenSize.width, 0.05*screenSize.height)];
     [platforms addObject:p];
     
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x + _offset, centerPos.y, 0.15*screenSize.width, 0.05*screenSize.height)];
+    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 2*_offset.x, centerPos.y - 2*_offset.y, 0.15*screenSize.width, 0.05*screenSize.height)];
     [platforms addObject:p];
     
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - _offset, centerPos.y, 0.05*screenSize.width, 0.05*screenSize.height)];
+    p = [Platform platformWithRectangle:CGRectMake(centerPos.x, centerPos.y - 2*_offset.y, 0.15*screenSize.width, 0.05*screenSize.height)];
     [platforms addObject:p];
     
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 4*_offset, centerPos.y + 2*_offset, 0.5*screenSize.width, 0.05*screenSize.height)];
+    p = [Platform platformWithRectangle:CGRectMake(centerPos.x + 2*_offset.x, centerPos.y - 5*_offset.y, 0.15*screenSize.width, 0.05*screenSize.height)];
     [platforms addObject:p];
     
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x + 2*_offset, centerPos.y, 0.05*screenSize.width, 0.25*screenSize.height)];
+    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 3*_offset.x, centerPos.y - 5*_offset.y, 0.15*screenSize.width, 0.05*screenSize.height)];
     [platforms addObject:p];
     
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 2*_offset, centerPos.y - 2*_offset, 0.25*screenSize.width, 0.05*screenSize.height)];
+    p = [Platform platformWithRectangle:CGRectMake(centerPos.x + 4*_offset.x, centerPos.y - 5*_offset.y, 0.05*screenSize.width, 0.35*screenSize.height)];
+    [platforms addObject:p];
+
+    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 4*_offset.x, centerPos.y - 6*_offset.y, 0.15*screenSize.width, 0.05*screenSize.height)];
     [platforms addObject:p];
     
-    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 3*_offset, centerPos.y - 3*_offset, 0.25*screenSize.width, 0.05*screenSize.height)];
+    p = [Platform platformWithRectangle:CGRectMake(centerPos.x - 5*_offset.x, centerPos.y - 7*_offset.y, 0.15*screenSize.width, 0.05*screenSize.height)];
     [platforms addObject:p];
 
     return platforms;
