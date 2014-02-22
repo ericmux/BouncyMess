@@ -21,8 +21,7 @@
     _sprite = [EMSpriteHelper createSpriteRectangleWithSize:rect];
     [self addChild:_sprite];
     self.position = rect.origin;
-    
-    CCLOG(@"p:%f", self.position.y);
+    self.contentSize = rect.size;
     
     CCPhysicsBody *body = [CCPhysicsBody bodyWithRect:CGRectMake(0, 0, rect.size.width, rect.size.height) cornerRadius:0];
     self.physicsBody = body;

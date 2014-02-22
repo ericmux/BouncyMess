@@ -12,6 +12,7 @@
     CCPhysicsNode *_physics;
     CGSize _screenSize;
     CGPoint _previous_velocity;
+    BOOL _trapped;
 }
 
 + (instancetype)scene
@@ -63,10 +64,11 @@
     [_physics addChild:outline];
     
     Bunny *bunny = [[Bunny alloc] init];
-    bunny.position = centerPos;
+    bunny.position = ccp(centerPos.x, centerPos.y + 0.1*centerPos.y);
     [_physics addChild:bunny];
     
     self.userInteractionEnabled = YES;
+    _trapped = NO;
 
 	return self;
 }
@@ -114,18 +116,34 @@
 
 - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair sphereCollision:(CCNode *)bunny thickPlatformCollision:(CCNode *)platform {
     _previous_velocity = bunny.physicsBody.velocity;
-    _previous_velocity.y = -_previous_velocity.y;
     return YES;
 }
 
 - (BOOL)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sphereCollision:(Bunny *)bunny thickPlatformCollision:(Platform *)platform {
-    CCLOG(@"b:%f  p:%f", bunny.position.y, platform.position.y);
-    if(bunny.position.y + bunny.contentSize.height*0.5 >= platform.position.y){
-        bunny.physicsBody.velocity = bunny.defaultVelocity;
-    } else {
-        bunny.physicsBody.velocity = _previous_velocity;
+
+    BOOL isUnder = bunny.position.y + bunny.contentSize.height*0.8 <= platform.position.y;
+    BOOL isAbove = bunny.position.y + bunny.contentSize.height*0.5 >= platform.position.y + platform.contentSize.height;
+    BOOL isHittingSide = bunny.position.x + bunny.contentSize.width*0.8 >= platform.position.x || bunny.position.x <= platform.position.x + platform.contentSize.width;
+    if(_trapped) _trapped = isHittingSide;
+
+    if(isUnder){
+        bunny.physicsBody.velocity = ccp(_previous_velocity.x,-_previous_velocity.y);
+        return YES;
     }
-    return YES;
+    
+    if(isAbove){
+        bunny.physicsBody.velocity = ccp(_previous_velocity.x, bunny.defaultVelocity.y);
+        return YES;
+    }
+    
+    if(isHittingSide && !_trapped){
+        bunny.physicsBody.velocity = ccp(-bunny.defaultVelocity.x, _previous_velocity.y);
+        bunny.direction = -bunny.direction;
+        _trapped = YES;
+        return YES;
+    }
+
+    return NO;
 }
 
 

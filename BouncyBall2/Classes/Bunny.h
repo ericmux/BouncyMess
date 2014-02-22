@@ -13,6 +13,7 @@
 @interface Bunny : CCNode
 
 @property (nonatomic, readonly) CCSprite *sphere;
+@property (nonatomic) int direction;
 
 
 -(CGPoint)defaultVelocity;

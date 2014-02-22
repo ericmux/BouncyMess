@@ -30,6 +30,7 @@
     _sphere.scale = 0.5f;
     [self addChild:_sphere];
     
+    self.contentSize = CGSizeMake(_sphere.contentSize.width*_sphere.scale, _sphere.contentSize.height*_sphere.scale);
 
     CCPhysicsBody *body = [CCPhysicsBody bodyWithCircleOfRadius:(_sphere.contentSize.width) *_sphere.scale*0.5 andCenter:CGPointZero];
     self.physicsBody = body;
@@ -44,6 +45,7 @@
     _defaultVelocity = ccp(2*_sphere.contentSize.width*_sphere.scale, 15*_sphere.contentSize.width*_sphere.scale);
     
     self.userInteractionEnabled = YES;
+    self.direction = 1;
     
     return self;
 
@@ -105,7 +107,7 @@
         
     } else {
     
-        self.physicsBody.velocity = ccp(_defaultVelocity.x,self.physicsBody.velocity.y);
+        self.physicsBody.velocity = ccp(_direction*_defaultVelocity.x,self.physicsBody.velocity.y);
     
     }
     

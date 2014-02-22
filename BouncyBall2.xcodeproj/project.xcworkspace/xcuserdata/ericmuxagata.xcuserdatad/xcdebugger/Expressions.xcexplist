@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[BouncyScene ccPhysicsCollisionPostSolve:sphereCollision:thickPlatformCollision:]:BouncyScene.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "platform.position.x + platform.contentSize.width;">
+            </PersistentString>
+            <PersistentString
+               value = "bunny.position.x  + bunny.contentSize.width*0.75">
+            </PersistentString>
+            <PersistentString
+               value = "bunny.direction">
+            </PersistentString>
+            <PersistentString
+               value = "platform.position.x">
+            </PersistentString>
+            <PersistentString
+               value = "bunny.physicsBody.velocity">
+            </PersistentString>
+            <PersistentString
+               value = "bunny.contentSize.width">
+            </PersistentString>
+            <PersistentString
+               value = "bunny.position.x">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
